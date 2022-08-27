@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2068E3"
+    tools:context=".QuestionActivity6">
+
+
+    <Button
+        android:id="@+id/answer_button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#8661C8"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="開始時間どおり"
+        android:textSize="16sp"
+        app:cornerRadius="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question6_text1" />
+
+    <Button
+        android:id="@+id/answer_button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#8661C8"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="少し早めに..."
+        android:textSize="16sp"
+        app:cornerRadius="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_button1" />
+
+    <Button
+        android:id="@+id/answer_button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#8661C8"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="CMが終わるくらいの時間"
+        android:textSize="16sp"
+        app:cornerRadius="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_button2" />
+
+    <TextView
+        android:id="@+id/question6_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="映画館に行くとき"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question6_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="だいたいいつ着く？"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question6_text1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

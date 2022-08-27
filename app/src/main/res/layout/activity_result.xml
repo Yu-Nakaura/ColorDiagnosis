@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_square"
+        app:srcCompat="@drawable/background" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FF9800"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="もう一度占う"
+        android:textSize="20sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/download_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="結果画像を保存する"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_square" />
+
+    <TextView
+        android:id="@+id/share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="結果をSNS で共有しよう"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/download_image_button" />
+
+    <TextView
+        android:id="@+id/introduction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="あなたのカラーは..."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/facebook_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="40dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/instagram_button"
+        app:layout_constraintTop_toBottomOf="@+id/red_square"
+        app:srcCompat="@drawable/facebook_image" />
+
+    <ImageButton
+        android:id="@+id/instagram_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_square"
+        app:srcCompat="@drawable/instagram_image" />
+
+    <ImageButton
+        android:id="@+id/twitter_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:background="#0000"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/instagram_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_square"
+        app:srcCompat="@drawable/twitter_image" />
+
+    <TextView
+        android:id="@+id/red_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#50F44336"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="赤"
+        android:textColor="#F44336"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/red_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="赤色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/red_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="何事にも積極的な\n熱いハートの持ち主"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text2" />
+
+    <TextView
+        android:id="@+id/red_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="好奇心旺盛！\n明るく自信家"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text3" />
+
+    <TextView
+        android:id="@+id/blue_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#503F51B5"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/blue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="青"
+        android:textColor="#3F51B5"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/blue_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="青色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue_text" />
+
+    <TextView
+        android:id="@+id/blue_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="周りへの配慮が\n上手な思慮深い人"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue_text2" />
+
+    <TextView
+        android:id="@+id/blue_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="常に周りを観察\n冷静な判断が得意"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text3" />
+
+
+    <TextView
+        android:id="@+id/pink_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#50EA5487"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/pink_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="桃"
+        android:textColor="#EA5487"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/pink_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="桃色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pink_text" />
+
+    <TextView
+        android:id="@+id/pink_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="穏やかで気配り\n上手なロマンチスト"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pink_text2" />
+
+    <TextView
+        android:id="@+id/pink_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="穏やかで優しい\n察する能力に長けている"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pink_text3" />
+
+    <TextView
+        android:id="@+id/yellow_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#50FFC107"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/yellow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="黄"
+        android:textColor="#FFC107"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/yellow_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="黄色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_text" />
+
+    <TextView
+        android:id="@+id/yellow_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="知性と明るさを\n兼ね備えた頭脳派"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_text2" />
+
+    <TextView
+        android:id="@+id/yellow_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="論理的に考えるのが得意\n頭の回転が速い"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow_text3" />
+
+    <TextView
+        android:id="@+id/green_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#5004854D"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/green_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="緑"
+        android:textColor="#04854D"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/green_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="緑色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/green_text" />
+
+    <TextView
+        android:id="@+id/green_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="みんなに優しい\n平等主義の持ち主"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/green_text2" />
+
+    <TextView
+        android:id="@+id/green_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="相談に乗るのが上手\n率先して助ける"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/green_text3" />
+
+    <TextView
+        android:id="@+id/black_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#50737876"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/black_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="黒"
+        android:textColor="#000000"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/black_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="黒色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/black_text" />
+
+    <TextView
+        android:id="@+id/black_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="何物にもとらわれない\n強い信念を持つ"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/black_text2" />
+
+    <TextView
+        android:id="@+id/black_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="決めたことは曲げない\n忍耐強く努力できる"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/black_text3" />
+
+    <TextView
+        android:id="@+id/purple_square"
+        android:layout_width="420sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="25dp"
+        android:background="#F8F6F5"
+        android:backgroundTint="#50673AB7"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red_text" />
+
+    <TextView
+        android:id="@+id/purple_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="紫"
+        android:textColor="#673AB7"
+        android:textSize="100sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/introduction_text" />
+
+    <TextView
+        android:id="@+id/purple_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="紫色のあなたは..."
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_text" />
+
+    <TextView
+        android:id="@+id/purple_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="直観を信じる\nクリエイタータイプ"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_text2" />
+
+    <TextView
+        android:id="@+id/purple_text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="物事をとらえる感覚が鋭い\n繊細な性格"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purple_text3" />
+
+    <TextView
+        android:id="@+id/color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="@font/kaisotai_up_next"
+        android:text="色"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/red_text"
+        app:layout_constraintTop_toBottomOf="@+id/introduction_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
